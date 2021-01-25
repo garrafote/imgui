@@ -24,10 +24,13 @@ project "ImGui"
 
 	filter "system:windows"
 		systemversion "latest"
+		cppdialect "c++17"
+		staticruntime "On"
 
 	filter "system:linux"
 		pic "On"
 		systemversion "latest"
+		cppdialect "c++17"
 		staticruntime "On"
 
 	filter "configurations:Debug"
